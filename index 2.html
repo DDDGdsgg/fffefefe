@@ -1,0 +1,107 @@
+c:\Users\215y-pc11\Desktop\Халилов Арсен\index.html<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание фигур в HTML</title>
+    <style>
+  
+        #square {
+            width: 100px;
+            height: 100px;
+            background-color: #ff6b6b;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+
+  
+        #rectangle {
+            width: 200px;
+            height: 100px;
+            background-color: #4ecdc4;
+            position: absolute;
+            left: 200px;
+            top: 50px;
+        }
+
+        #circle {
+            width: 100px;
+            height: 100px;
+            background-color: #ffe66d;
+            border-radius: 50%;
+            position: absolute;
+            left: 50px;
+            top: 200px;
+        }
+
+        #parallelogram {
+            width: 200px;
+            height: 100px;
+            background-color: #95e1d3;
+            transform: skewX(-20deg);
+            position: absolute;
+            left: 200px;
+            top: 200px;
+        }
+
+        /* Треугольник */
+        #triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #f38181;
+            position: absolute;
+            left: 450px;
+            top: 50px;
+        }
+
+        /* Задание 2 - квадрат с исчезновением */
+        #hover-square {
+            width: 150px;
+            height: 150px;
+            background-color: #000000;
+            color: white;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 450px;
+            top: 200px;
+            transition: opacity 0.5s ease;
+            z-index: 2;
+        }
+
+        #hover-square:hover {
+            opacity: 0;
+        }
+
+        /* Круг, который появляется вместо квадрата */
+        #hover-circle {
+            width: 150px;
+            height: 150px;
+            background-color: #aa96da;
+            border-radius: 50%;
+            position: absolute;
+            left: 450px;
+            top: 200px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Задание 1: Фигуры -->
+    <div id="square"></div>
+    <div id="rectangle"></div>
+    <div id="circle"></div>
+    <div id="parallelogram"></div>
+    <div id="triangle"></div>
+
+    <!-- Задание 2: Исчезающий квадрат -->
+    <div id="hover-circle"></div>
+    <div id="hover-square">квадрат</div>
+</body>
+</html>

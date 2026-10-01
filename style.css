@@ -1,0 +1,69 @@
+/* 1. Изменение фонового изображения */
+body {
+    /* Замените ссылку на путь к вашей скачанной картинке с toptal.com */
+    background: url('background.png') repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 2. Изменение блока div (поле меню для кнопок) */
+#menu {
+    width: 300px;
+    height: 400px;
+    /* Прозрачность: черный цвет с прозрачностью 30% */
+    background: rgba(0, 0, 0, 0.3); 
+    margin-left: 50px;
+    margin-top: 50px;
+    position: absolute; /* Отступы осуществляются от края страницы */
+    border-radius: 15px; /* Закругление углов */
+}
+
+/* 3. Изменение кнопок button по их классу */
+.btn {
+    width: 220px;
+    height: 60px;
+    background-color: #2980b9; /* Цвет кнопки */
+    border: none; /* Полностью убираем рамку */
+    border-radius: 10px; /* Закругление углов */
+    z-index: 10; /* Индекс, чтобы кнопки были выше, чем блок div */
+    /* Тень кнопки (сдвиг по осям и цвет) */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s ease; /* Плавная смена цвета */
+}
+
+/* 4. Выравнивание кнопок (form) по блоку div */
+/* Обращаемся к id каждой формы по очереди */
+#form1 {
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+#form2 {
+    position: relative;
+    top: 30px; /* Сдвигается от предыдущего объекта */
+    left: 20px;
+}
+
+#form3 {
+    position: relative;
+    top: 30px; /* Сдвигается от предыдущего объекта */
+    left: 20px;
+}
+
+/* 5. Редактирование текста внутри кнопок */
+.btn-text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; /* Убираем стандартные отступы тега p */
+    line-height: 60px; /* Центрируем текст по вертикали */
+    text-align: center;
+}
+
+/* 6. При наведении курсора на кнопку */
+.btn:hover {
+    background-color: #1abc9c; /* Меняем цвет фона */
+    cursor: pointer; /* Меняем курсор на "указатель" */
+}
